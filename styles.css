@@ -1,0 +1,355 @@
+body {
+  background: #333;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: rgba(0, 0, 0, 0.5) 3px solid;
+  opacity: 0.85;
+  height: 3.8rem;
+  transition: all 0.6s;
+}
+
+.navbar:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.nav-link {
+  border-bottom: rgba(0, 0, 0, 0) 2px solid;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  border-bottom: rgba(0, 0, 0, 0.5) 2px solid;
+  transition: all 0.5s;
+}
+
+#home-section {
+  /* background: url('https://images.pexels.com/photos/3184355/pexels-photo-3184355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat; */
+  background: url("https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat;
+  /* background: url('https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat; */
+  min-height: 700px;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  height: 100vh;
+}
+
+.home-inner {
+  padding-top: 150px;
+}
+
+.card-form {
+  opacity: 0.8;
+}
+
+.fas {
+  color: #008ed6;
+  background: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.create-img {
+  max-height: 350px;
+}
+
+.fas-dark {
+  color: #fff;
+  background: #333;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+/* About Page */
+.about-para {
+  margin: 0 6.5rem 1.5rem 6.5rem;
+}
+
+/* Projects */
+.highlight {
+  color: rgb(255, 128, 0);
+}
+
+.highlight:hover {
+  color: rgb(255, 128, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: #008ed6;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.item:hover {
+  opacity: 0.7;
+}
+
+.borderBreak {
+  border-bottom: #333 1.2px solid;
+}
+
+/* Experience */
+.dark-color {
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.85rem;
+}
+
+.cv-link {
+  border-bottom: rgba(0, 0, 0, 0) 3px solid;
+  transition: all 0.5s;
+  padding: 0.2rem;
+}
+
+.cv-link:hover {
+  border-bottom: rgba(0, 0, 0, 0.5) 3px solid;
+}
+
+/* Projects */
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #141c3a;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.projCard {
+  width: 32%;
+}
+
+.projTitle {
+  font-size: 1.3rem;
+}
+
+.projPara {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Experience */
+.cardExp {
+  height: 200px;
+}
+
+/* Footer */
+.testB {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-margin {
+  margin: 0 6rem;
+}
+
+.icon {
+  margin: 0 3rem;
+}
+
+.fa-linkedin {
+  font-size: 6rem;
+  transition: all 0.5s;
+}
+
+.fa-linkedin:hover {
+  transition: all 0.5s;
+  color: rgb(163, 162, 162);
+}
+
+.fa-envelope-open {
+  font-size: 5.3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+}
+
+.fa-envelope-open:hover {
+  transition: all 0.5s;
+  color: rgb(163, 162, 162);
+}
+
+.fa-mobile-alt {
+  font-size: 5.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+}
+
+.fa-mobile-alt:hover {
+  transition: all 0.5s;
+  color: rgb(163, 162, 162);
+}
+
+.icon-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-link:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  /* About */
+  .about-para {
+    margin: 0;
+  }
+
+  /* Projects */
+  .projects1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects1 > .projCard {
+    width: 100vw;
+  }
+
+  .projects2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects2 > .projCard {
+    width: 100vw;
+  }
+
+  /* Work Experience */
+  .expContainer {
+    padding: 0;
+  }
+
+  .csExp {
+    margin: 0.2rem 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    /* color: blue; */
+  }
+  /* About */
+  .about-para {
+    margin: 0;
+  }
+
+  /* Work Experience */
+  .expContainer {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .csExp {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    /* color: red; */
+  }
+  .expContainer {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .projTitle {
+    font-size: 1rem;
+  }
+  .projPara {
+    font-size: 0.6rem;
+  }
+
+  .projbtn {
+    font-size: 0.5rem;
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    /* color: green; */
+  }
+
+  .csExp {
+    margin: 0 5px;
+  }
+
+  .projTitle {
+    font-size: 1.4rem;
+  }
+  .projPara {
+    font-size: 0.8rem;
+  }
+
+  .projbtn {
+    font-size: 0.8rem;
+  }
+
+  
+
+}
+
+
+/* test page */
+
+.testdiv {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.card-test {
+  width: 100%;
+  
+}
+
+.projbtn {
+  font-size: 0.7rem;
+}
