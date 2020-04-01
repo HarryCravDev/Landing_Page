@@ -1,6 +1,7 @@
 body {
   background: #333;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -194,7 +195,8 @@ body {
 
 .fa-linkedin:hover {
   transition: all 0.5s;
-  color: rgb(163, 162, 162);
+  color: #;
+
 }
 
 .fa-envelope-open {
