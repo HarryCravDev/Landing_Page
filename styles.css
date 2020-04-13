@@ -44,8 +44,6 @@ body {
 }
 
 #home-section {
-  background: url("https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-    no-repeat;
   min-height: 700px;
   background-size: cover;
   background-attachment: fixed;
@@ -122,6 +120,7 @@ body {
 .borderBreak {
   border-bottom: #333 1.2px solid;
 }
+
 
 /* Experience */
 .dark-color {
@@ -254,6 +253,12 @@ body {
 /* Responsive */
 @media only screen and (max-width: 600px) {
    /* Nav */
+   .navbar {
+    background-color: transparent !important;
+    border-bottom: none;
+    
+   }
+
    .nav-link {
     background-color: rgb(248, 249, 250);
     border-bottom: none;
@@ -261,6 +266,12 @@ body {
 
   .nav-link:hover {
     border-bottom: none;
+  }
+
+  .navbar-toggler {
+    background-color: rgba(248, 249, 250, 1);
+    padding-top: 10px;
+    
   }
  /* New NavChanges */
   ul {
@@ -352,6 +363,10 @@ body {
   }
 
   /* Contact Section */
+  #section-contact {
+    padding: 5rem 0 0 0;
+  }
+
   .fa-linkedin {
     margin: 0;
     font-size: 5rem;
@@ -452,3 +467,4 @@ body {
 .projbtn {
   font-size: 0.7rem;
 }
+
