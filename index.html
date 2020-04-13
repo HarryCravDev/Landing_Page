@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>Harry Craven | Landing Page</title>
+    <title>Harry Craven</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="icon" href="./imgs/H-LOGO.png" type="image/png" sizes="16x16">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -19,52 +21,65 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top data-scroll-header">
         <div class="container">
-            <button class="navbar-toggler mr-auto" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler  mx-auto mb-2 p-2" data-toggle="collapse" data-target="#navbarCollapse">
+                <!-- <span class="navbar-toggler-icon"></span> -->MENU
             </button>
             <div class="collaspe navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a href="#section-home" class="nav-link">Home</a>
+                        <a href="#section-home" class="nav-link lead">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section-about" class="nav-link test">About</a>
+                        <a href="#section-about" class="nav-link test lead">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section-projects" class="nav-link">Projects</a>
+                        <a href="#section-projects" class="nav-link lead">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section-exp" class="nav-link">Experience</a>
+                        <a href="#section-exp" class="nav-link lead">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section-contact" class="nav-link">Contact</a>
+                        <a href="#section-contact" class="nav-link borderRadius-sm lead">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <header id="home-section">
-        <div id="one">
-            <div class="dark-overlay d-flex justify-content-center align-items-center">
-                <div class="">
-                    <h1 class="display-4">Hello, I am Harry</h1>
-                    <p class="lead">I love tech and coding wonderful projects...</p>
+    <div id="particles-js">
+        
+            <div id="one">
+                <div class="dark-overlay d-flex justify-content-center align-items-center">
+                    <div class="margin-fix-sm">
+                        <h1 class="display-4">Hello, I am Harry</h1>
+                        <p class="lead">I love tech and coding wonderful projects...</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        
+    </div>
+
+    <!-- Home Section -->
+    <!-- <header id="home-section">
+            <div id="one">
+                <div class="dark-overlay d-flex justify-content-center align-items-center">
+                    <div class="margin-fix-sm">
+                        <h1 class="display-4">Hello, I am Harry</h1>
+                        <p class="lead">I love tech and coding wonderful projects...</p>
+                    </div>
+                </div>
+            </div>
+        </header> -->
 
     <!-- Explore Head -->
     <section id="section-about">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <div class="p-5">
+                    <div class="p-5 about-fix-sm">
                         <h1 class="display-4">About Me</h1>
                         <p class="about-para lead">
-                            I have a defining passion for personal development and believe in learning from every new day. I spend a lot of my time designing projects and building digital products using the latest Web Technology. I have an array of digital skills from experience in Game Development, Robotics Process Automation, Design, and digital marketing.    
+                            I have a defining passion for personal development and believe in learning from every new day. I spend a lot of my time designing projects and building digital products using the latest Web Technology. Through hard work I have attained a wide array of digital skills ranging from experience in Game Development, Robotics Process Automation, Design, and Digital Marketing.
                         </p>
                     </div>
                 </div>
@@ -77,8 +92,8 @@
     <!-- Projects  -->
     <section id="section-projects" class="bg-light text-muted py-5 borderBreak">
         <div class="container">
-            <h3 class="display-4 text-center dark-color">Projects</h3>
-            <p class="lead text-center mb-5">Here are a few recent projects. Want to see more? <a
+            <h3 class="display-4 text-center dark-color proj-title-sm">Projects</h3>
+            <p class="lead text-center mb-5 proj-para-sm">Here are a few recent projects. Want to see more? <a
                     href="mailto:Harrycrav@gmail.com" class="highlight noHover" data-toggle="modal"
                     data-target="#exampleModalCenter">Email me</a>.
             </p>
@@ -164,7 +179,7 @@
 
             <div class="col-md-4 col-sm-12 mt-4">
                 <div class="card projCard card-test">
-                    <img class="card-img-top" src="imgs/Type_it" alt="Card image cap">
+                    <img class="card-img-top" src="imgs/Type_it.jpg" alt="Card image cap">
                     <div class="overlay">
                         <div class="text">
                             <h4 class="projTitle">Type it!</h4>
@@ -190,13 +205,28 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="dark-color">
-                        <h1 class="display-4">Experience</h1>
-                        <p class="lead text-center mb-5">Here is some of my professional and educational experience. <a
+                        <h1 class="display-4 proj-title-sm">Experience</h1>
+                        <p class="lead text-center proj-para-sm mb-5">Here is some of my professional and educational experience. <a
                             href="mailto:Harrycrav@gmail.com" class="highlight noHover" data-toggle="modal"
-                            data-target="#exampleModalCenter">CV Link</a>.</p> 
+                            data-target="#cvInfo">CV Link</a>.</p> 
                         <div class="row my-5">
                             <div class="col-lg-4 col-md-8 mx-auto expContainer">
                                 <div class="card text-center">
+                                    <div class="card-header">
+                                        Total System Services
+                                    </div>
+                                    <div class="card-body cardExp">
+                                        <h5 class="card-title">Test Analyst</h5>
+                                        <p class="card-text">Information coming soon.</p>
+                                        <p class="card-text text-center"><i class="far fa-2x fa-file-word"></i>  <i class="far fa-2x fa-paper-plane"></i></p>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        Dates: 2020 - Present
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-8 expContainer">
+                                <div class="card text-center csExp">
                                     <div class="card-header">
                                         Total System Services
                                     </div>
@@ -208,24 +238,7 @@
                                             and trustworthiness.</p>
                                     </div>
                                     <div class="card-footer text-muted">
-                                        Dates: 2018 - Present
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-8 expContainer">
-                                <div class="card text-center csExp">
-                                    <div class="card-header">
-                                        Total System Services
-                                    </div>
-                                    <div class="card-body cardExp">
-                                        <h5 class="card-title">Customer Service</h5>
-                                        <p class="card-text">Financial experience working for Nationwide Building
-                                            Society managing and helping customers with credit card decisions and
-                                            queries. A customer oriented role requiring high levels of communication,
-                                            product knowledge, listening skills, and adaptability.</p>
-                                    </div>
-                                    <div class="card-footer text-muted">
-                                        Dates: 2017 - 2018
+                                        Dates: 2018 - 2020
                                     </div>
                                 </div>
                             </div>
@@ -266,9 +279,9 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="py-4">
-                        <h1 class="h3 display-4">Contact Me</h1>
-                        <p class="lead">Please feel free to message with both casual and professional messages.</p>
-                        <p class="mb-5">Copyright &copy; 2020</p>
+                        <h1 class="h3 display-4 proj-title-sm">Contact Me</h1>
+                        <p class="lead proj-para-sm">Please feel free to message with both casual and professional messages.</p>
+                        <p class="mb-5 proj-para-sm">Copyright &copy; 2020</p>
 
                         <div class="d-flex justify-content-center my-3">
                             <a href="https://www.linkedin.com/in/harry-craven-837601172/" target="_blank"
@@ -296,7 +309,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p class="lead text-dark">Email: HarryCravDev@Gmail.com</p>
+                    <p class="lead text-dark">Email: HarryCraven.Dev@Gmail.com</p>
                     <p class="lead text-dark">Telephone Number: +44 7775811437</p>
                     <p class="lead text-dark">Location: Coventry, United Kingdom.</p>
                 </div>
@@ -315,8 +328,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p class="lead text-dark">If you would like to see my CV or have any questions related to my work and educational experience please email me. Thank you!</p>
-                    <p class="lead text-dark">Email: HarryCravDev@Gmail.com</p>
+                    <p class="lead text-dark">If you would like a copy of my CV or have any questions related to my work and educational experience please email me. Thank you!</p>
+                    <p class="lead text-dark">Email: HarryCraven.Dev@Gmail.com</p>
                 </div>
             </div>
         </div>
@@ -324,7 +337,11 @@
 
 
 
-
+    <script>
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
 
     <!-- Optional JavaScript -->
     <script src="main.js"></script>
